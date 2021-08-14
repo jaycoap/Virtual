@@ -121,6 +121,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &10078796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3846732064599773280, guid: 41ff6307be5af124f9178656d1889ec0,
+    type: 3}
+  m_PrefabInstance: {fileID: 3846732065674335581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &10078797
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10078796}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1
 --- !u!4 &1074562367 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3846732064599773282, guid: 41ff6307be5af124f9178656d1889ec0,
@@ -178,15 +200,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1492342403006380232, guid: 11eb6ef1bf690c34c91d0789087ac701,
+        type: 3}
+      propertyPath: m_AssetsPPU
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492342403006380232, guid: 11eb6ef1bf690c34c91d0789087ac701,
+        type: 3}
+      propertyPath: m_UpscaleRT
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492342403006380235, guid: 11eb6ef1bf690c34c91d0789087ac701,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 10078796}
     - target: {fileID: 1492342403006380235, guid: 11eb6ef1bf690c34c91d0789087ac701,
         type: 3}
       propertyPath: m_player
       value: 
       objectReference: {fileID: 1074562367}
+    - target: {fileID: 1492342403006380235, guid: 11eb6ef1bf690c34c91d0789087ac701,
+        type: 3}
+      propertyPath: smoothTimeX
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492342403006380235, guid: 11eb6ef1bf690c34c91d0789087ac701,
+        type: 3}
+      propertyPath: smoothTimeY
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1492342403006380236, guid: 11eb6ef1bf690c34c91d0789087ac701,
         type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492342403006380238, guid: 11eb6ef1bf690c34c91d0789087ac701,
+        type: 3}
+      propertyPath: orthographic size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1492342403006380239, guid: 11eb6ef1bf690c34c91d0789087ac701,
         type: 3}
@@ -311,6 +363,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192132341703648248, guid: 41ff6307be5af124f9178656d1889ec0,
+        type: 3}
+      propertyPath: speed
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41ff6307be5af124f9178656d1889ec0, type: 3}
