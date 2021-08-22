@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class gameManager : MonoBehaviour
 {
     public static gameManager instance;
+    
+
 
     public int level;
 
-    void Awake()
+    private void Awake()
     {
         instance = this;
+        
     }
 
     // Start is called before the first frame update
@@ -22,6 +26,6 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 }
