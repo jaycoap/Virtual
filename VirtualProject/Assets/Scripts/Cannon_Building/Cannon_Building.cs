@@ -9,7 +9,14 @@ public class Cannon_Building : MonoBehaviour
     public Animator anim;
     public SpriteRenderer Cannon_spriteRenderer;
     public Sprite Cannon_Complete_Sprite;
+    
 
+   
+
+
+    private Vector2[] savePosition = new Vector2[100];
+    
+    Vector3 pos;
     Animator Cannon_Animator;
 
     public HealthBar Cannon_HealthBar;
@@ -23,6 +30,10 @@ public class Cannon_Building : MonoBehaviour
         Cannon_Animator = GetComponent<Animator>();
         Cannon_Animator.SetBool("Building", true);
         
+        
+
+        pos = this.gameObject.transform.position;
+
 
     }
 
@@ -50,4 +61,5 @@ public class Cannon_Building : MonoBehaviour
         this.gameObject.GetComponent<SpriteRenderer>().sprite = Cannon_Complete_Sprite;
 
     }
+    
 }

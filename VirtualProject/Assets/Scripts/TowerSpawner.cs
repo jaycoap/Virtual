@@ -6,50 +6,48 @@ using UnityEngine;
 
 public class TowerSpawner : MonoBehaviour
 {
+
     [SerializeField]
-    private GameObject CanonObject;
-    Camera Camera;
-    private Testing testing;
-    private Ray ray;
-    private RaycastHit hit;
-    Vector2 MousePosition;
-    private bool checkPosition = false;
-    private Vector2[] savePosition = new Vector2[100];
-    int i = 0;
-    Vector3 pos;
+    private GameObject CannonObject;
+    Camera Maincamera;
+    
 
-    private void Start()
+
+    Ray2D ray;
+    RaycastHit2D rayhit;
+    Vector2 pos;
+
+    void Start()
     {
-        Camera = GameObject.Find("Main Camera").GetComponent<Camera>();
-        
-        pos = this.gameObject.transform.position;
-
-        
+         
+        Maincamera = GameObject.Find("Main Camera").GetComponent<Camera>();
     }
     void Update()
     {
-        savePosition[i] = MousePosition;
+        BulidCannon();
+    }
+
+    public void BulidCannon()
+    {
         if (Input.GetMouseButtonDown(0))
         {
+            
+            pos = Maincamera.ScreenToWorldPoint(Input.mousePosition);
+            ray = new Ray2D(pos, Vector2.zero);
+            rayhit = Physics2D.Raycast(ray.origin, ray.direction);
 
-            if (CanonObject.transform.position == pos)
+            if (rayhit.transform.CompareTag("TileManager"))
             {
-                Debug.Log("설치불가");
+                Instantiate(CannonObject, pos, Quaternion.identity);
             }
-            else
+            else if (rayhit.collider)
             {
-                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                MousePosition = Input.mousePosition;
-                MousePosition = Camera.ScreenToWorldPoint(MousePosition);
-                Instantiate(CanonObject, MousePosition, Quaternion.identity);
-                i++;
-                
+                return;
             }
-            
-            
             
         }
     }
+    
 
 
 }
