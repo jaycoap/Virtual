@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Building
+  m_Name: building
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,40 +20,46 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1370150288747598966, guid: 235a6eb5499bcfb4e930ee0dd20bf725,
-        type: 3}
-    - time: 0.083333336
-      value: {fileID: 961210159572563268, guid: 235a6eb5499bcfb4e930ee0dd20bf725,
+      value: {fileID: -8642991989336769219, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
         type: 3}
     - time: 0.16666667
-      value: {fileID: 8527704022205132460, guid: 235a6eb5499bcfb4e930ee0dd20bf725,
-        type: 3}
-    - time: 0.25
-      value: {fileID: -1706636390946437097, guid: 235a6eb5499bcfb4e930ee0dd20bf725,
+      value: {fileID: 1878819693557361902, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
         type: 3}
     - time: 0.33333334
-      value: {fileID: -4549087368393172227, guid: 235a6eb5499bcfb4e930ee0dd20bf725,
-        type: 3}
-    - time: 0.41666666
-      value: {fileID: 6163353665255179149, guid: 235a6eb5499bcfb4e930ee0dd20bf725,
+      value: {fileID: -1531750512446386039, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
         type: 3}
     - time: 0.5
-      value: {fileID: 197298030915183396, guid: 235a6eb5499bcfb4e930ee0dd20bf725,
-        type: 3}
-    - time: 0.5833333
-      value: {fileID: 5661934994238220498, guid: 235a6eb5499bcfb4e930ee0dd20bf725,
+      value: {fileID: 5985922110615775501, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
         type: 3}
     - time: 0.6666667
-      value: {fileID: 5862834054929862926, guid: 235a6eb5499bcfb4e930ee0dd20bf725,
+      value: {fileID: 159491448134255292, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
         type: 3}
-    - time: 0.75
-      value: {fileID: -3851808702378514648, guid: 235a6eb5499bcfb4e930ee0dd20bf725,
+    - time: 0.8333333
+      value: {fileID: -7370931680418756339, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
+        type: 3}
+    - time: 1
+      value: {fileID: 1799334507853481732, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
+        type: 3}
+    - time: 1.1666666
+      value: {fileID: -1915039871428901944, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
+        type: 3}
+    - time: 1.3333334
+      value: {fileID: -755587884928737659, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
+        type: 3}
+    - time: 1.5
+      value: {fileID: -182947946226082491, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
+        type: 3}
+    - time: 1.6666666
+      value: {fileID: -4290131552018141382, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
+        type: 3}
+    - time: 1.8333334
+      value: {fileID: -8284019677443885887, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6,
         type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 60
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -68,27 +74,29 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1370150288747598966, guid: 235a6eb5499bcfb4e930ee0dd20bf725, type: 3}
-    - {fileID: 961210159572563268, guid: 235a6eb5499bcfb4e930ee0dd20bf725, type: 3}
-    - {fileID: 8527704022205132460, guid: 235a6eb5499bcfb4e930ee0dd20bf725, type: 3}
-    - {fileID: -1706636390946437097, guid: 235a6eb5499bcfb4e930ee0dd20bf725, type: 3}
-    - {fileID: -4549087368393172227, guid: 235a6eb5499bcfb4e930ee0dd20bf725, type: 3}
-    - {fileID: 6163353665255179149, guid: 235a6eb5499bcfb4e930ee0dd20bf725, type: 3}
-    - {fileID: 197298030915183396, guid: 235a6eb5499bcfb4e930ee0dd20bf725, type: 3}
-    - {fileID: 5661934994238220498, guid: 235a6eb5499bcfb4e930ee0dd20bf725, type: 3}
-    - {fileID: 5862834054929862926, guid: 235a6eb5499bcfb4e930ee0dd20bf725, type: 3}
-    - {fileID: -3851808702378514648, guid: 235a6eb5499bcfb4e930ee0dd20bf725, type: 3}
+    - {fileID: -8642991989336769219, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
+    - {fileID: 1878819693557361902, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
+    - {fileID: -1531750512446386039, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
+    - {fileID: 5985922110615775501, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
+    - {fileID: 159491448134255292, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
+    - {fileID: -7370931680418756339, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
+    - {fileID: 1799334507853481732, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
+    - {fileID: -1915039871428901944, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
+    - {fileID: -755587884928737659, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
+    - {fileID: -182947946226082491, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
+    - {fileID: -4290131552018141382, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
+    - {fileID: -8284019677443885887, guid: 1aaa2adf9bcd90944bd0170a41d7d8f6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.76666665
+    m_StopTime: 2
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -110,63 +118,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.016666668
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.033333335
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.05
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.06666667
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 0.083333336
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.1
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.11666667
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.13333334
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.15
     functionName: Build_Cannon
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -180,63 +132,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.18333334
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.2
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.21666667
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.23333333
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 0.25
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.26666668
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.28333333
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.3
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.31666666
     functionName: Build_Cannon
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -250,63 +146,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.35
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.36666667
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.38333333
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.4
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 0.41666666
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.43333334
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.45
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.46666667
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.48333332
     functionName: Build_Cannon
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -320,63 +160,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.51666665
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.53333336
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.55
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.56666666
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 0.5833333
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.6
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.6166667
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.6333333
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.65
     functionName: Build_Cannon
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -390,35 +174,112 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.68333334
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.7
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.71666664
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.73333335
-    functionName: Build_Cannon
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
   - time: 0.75
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.8333333
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.9166667
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.0833334
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.1666666
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.25
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.3333334
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.4166666
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.5
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.5833334
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.6666666
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.75
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.8333334
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.9166666
+    functionName: Build_Cannon
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2
     functionName: Build_Cannon
     data: 
     objectReferenceParameter: {fileID: 0}

@@ -40,7 +40,7 @@ public class Cannon_Building : MonoBehaviour
     // Update is called once per frame
     public void Build_Cannon()
     {
-        Cannon_Health = Cannon_Health + 1;
+        Cannon_Health = Cannon_Health + 20;
 
         if (Cannon_Health >= Cannon_Struct_maxHealth || Cannon_Health == Cannon_Struct_maxHealth)
         {

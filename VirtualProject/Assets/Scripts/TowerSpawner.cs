@@ -40,7 +40,7 @@ public class TowerSpawner : MonoBehaviour
             {
                 Instantiate(CannonObject, pos, Quaternion.identity);
             }
-            else if (rayhit.collider)
+            else if (rayhit.collider || rayhit.transform.CompareTag("Canvas"))
             {
                 return;
             }
