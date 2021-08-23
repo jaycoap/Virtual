@@ -15,7 +15,7 @@ public class TowerSpawner : MonoBehaviour
 
     Ray2D ray;
     RaycastHit2D rayhit;
-    Vector2 pos;
+    public Vector2 pos;
 
     void Start()
     {
