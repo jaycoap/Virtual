@@ -10,6 +10,22 @@ public class Spider : MonoBehaviour
     private Movement2D movement2D;
     private SpiderSpawner spiderSpawner;
 
+    public float Attack_Delay;
+
+
+    public Sprite[] sprites;
+    public int Health;
+    public GameObject ItemGold;
+    public GameObject Player;
+    public ObjecManager objecManager;
+
+    SpriteRenderer spriteRenderer;
+
+
+    public void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
     public void Setup(SpiderSpawner spiderSpawner, Transform[] wayPoints)
     {
         movement2D = GetComponent<Movement2D>();
@@ -27,6 +43,35 @@ public class Spider : MonoBehaviour
     private void Update()
     {
         NextMoveTo();
+    }
+    void Delay()
+    {
+        Attack_Delay += Time.deltaTime;
+    }
+
+    public void OnHit(int Spider_Damage)
+    {
+        if (Health <= 0)
+            return;
+
+        Health -= Spider_Damage;
+        spriteRenderer.sprite = sprites[1];
+        Invoke("ReturnSprite", 0.1f);
+
+        if (Health <= 0 )
+        {
+            playerManager playerCS = Player.GetComponent<playerManager>();
+            int RandomGold = Random.Range(0, 10);
+            if(RandomGold < 7)
+            {
+                GameObject ItemGold = objecManager.ManagerObject("ItemGold");
+            }
+            gameObject.SetActive(false);
+        }
+    }
+    void ReturnSprite()
+    {
+        spriteRenderer.sprite = sprites[0];
     }
     private IEnumerator OnMove()
     {

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 
 
@@ -31,19 +32,23 @@ public class TowerSpawner : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            
-            pos = Maincamera.ScreenToWorldPoint(Input.mousePosition);
-            ray = new Ray2D(pos, Vector2.zero);
-            rayhit = Physics2D.Raycast(ray.origin, ray.direction);
+            if(EventSystem.current.IsPointerOverGameObject() == false)
+            {
+                pos = Maincamera.ScreenToWorldPoint(Input.mousePosition);
+                ray = new Ray2D(pos, Vector2.zero);
+                rayhit = Physics2D.Raycast(ray.origin, ray.direction);
 
-            if (rayhit.transform.CompareTag("TileManager"))
-            {
-                Instantiate(CannonObject, pos, Quaternion.identity);
+                if (rayhit.transform.CompareTag("TileManager"))
+                {
+                    Instantiate(CannonObject, pos, Quaternion.identity);
+                }
+                else if (rayhit.collider)
+                {
+                    return;
+                }
             }
-            else if (rayhit.collider || rayhit.transform.CompareTag("Canvas"))
-            {
-                return;
-            }
+            
+           
             
         }
     }

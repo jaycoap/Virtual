@@ -14,25 +14,48 @@ public class Cannon_Weapon : MonoBehaviour
     private float attackRate = 0.5f;
     [SerializeField]
     private float attackRange = 20.0f;
-    private WeaponState weaponState = WeaponState.SearchTarget;
-    private Transform attackTarget = null;
+    //private WeaponState weaponState = WeaponState.SearchTarget;
+    //private Transform attackTarget = null;
     private SpiderSpawner spiderSpawner;    //게임에 존재하는 Spider 적 정보 획득
+    private Transform Cannontransform;
+    private Vector3 Cannon;
+    public GameObject Spider;
+    public float closetDistance = Mathf.Infinity;
+
 
     public void Setup(SpiderSpawner spiderSpawner)
     {
         this.spiderSpawner = spiderSpawner;
 
-        ChangeState(WeaponState.SearchTarget);
+        //ChangeState(WeaponState.SearchTarget);
     }
 
     private void Update()
     {
-        ChangeState(WeaponState.SearchTarget);
+        /*ChangeState(WeaponState.SearchTarget);
         SearchTarget();
-        AttackToTarget();
+        AttackToTarget();*/
+        Cannon = new Vector3(Cannontransform.position.x, Cannontransform.position.y, Cannontransform.position.z);
+        
+        
+
+        Collider[] cols = Physics.OverlapSphere(Cannontransform.position, attackRange);
+
+        foreach(Collider col in cols)
+        {
+            if(col.gameObject.tag == "Spider")
+            {
+                float distance = Vector2.Distance(col.transform.position, Cannon);
+                if(distance< closetDistance)
+                {
+                    closetDistance = distance;
+                    Spider = col.gameObject;
+                }
+            }
+        }
         
     }
-    public void ChangeState(WeaponState newState)
+    /*public void ChangeState(WeaponState newState)
     {
         StopCoroutine(weaponState.ToString()); //이전에 재생중이던 상태 종료
         weaponState = newState; //상태 변경
@@ -92,5 +115,5 @@ public class Cannon_Weapon : MonoBehaviour
     private void SpawnProjectile()
     {
         Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
-    }
+    }*/
 }
