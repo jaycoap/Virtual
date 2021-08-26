@@ -103,7 +103,7 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: e5ca49b8c57647d43b2576ee132188a0, type: 3}
   Health: 0
-  ItemGold: {fileID: 0}
+  ItemGold: {fileID: 956619086519892397, guid: 9a07832faa8de2d49b9357908d45610a, type: 3}
   Player: {fileID: 0}
   objecManager: {fileID: 0}
 --- !u!114 &7192906379657339266

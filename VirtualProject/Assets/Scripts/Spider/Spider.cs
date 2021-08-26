@@ -109,6 +109,14 @@ public class Spider : MonoBehaviour
 
     public void Ondie()
     {
-        spiderSpawner.DestroySpider(this);
+        float my_Value = Random.Range(0,10);
+
+        if (my_Value > 7)
+        {
+            GameObject clone = Instantiate(ItemGold, transform.position, Quaternion.identity);
+
+            spiderSpawner.DestroySpider(this);
+        }
+        else { spiderSpawner.DestroySpider(this); }
     }
 }

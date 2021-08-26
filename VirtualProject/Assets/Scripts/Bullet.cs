@@ -14,6 +14,17 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.tag == "Spider")
+        {
+            collision.GetComponent<Spider>().Ondie();
+            Destroy(gameObject);
+        }
+
+        //if (!collision.CompareTag("Spider")) return;
+        //if (collision.transform != target) return;
+
+        
     }
     private void Start()
     {

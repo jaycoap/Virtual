@@ -6,6 +6,7 @@ public class ProjectTile : MonoBehaviour
 {
     private Movement2D movement2D;
     private Transform target;
+    
 
     public void Setup(Transform target)
     {
