@@ -9,10 +9,6 @@ public class Cannon_Building : MonoBehaviour
     public Animator anim;
     public SpriteRenderer Cannon_spriteRenderer;
     public Sprite Cannon_Complete_Sprite;
-    
-
-   
-
 
     private Vector2[] savePosition = new Vector2[100];
     
@@ -30,8 +26,6 @@ public class Cannon_Building : MonoBehaviour
         Cannon_Animator = GetComponent<Animator>();
         Cannon_Animator.SetBool("Building", true);
         
-        
-
         pos = this.gameObject.transform.position;
 
 
@@ -62,4 +56,15 @@ public class Cannon_Building : MonoBehaviour
 
     }
     
+    public void get_damage()
+    {
+        Cannon_Health = Cannon_Health - 50;
+        Cannon_HealthBar.SetHealth(Cannon_Health);
+
+        if (Cannon_Health  == 0)
+        {
+            Destroy(gameObject);
+        }
+
+    }
 }

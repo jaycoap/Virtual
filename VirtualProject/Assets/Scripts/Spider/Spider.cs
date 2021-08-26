@@ -18,6 +18,7 @@ public class Spider : MonoBehaviour
     public GameObject ItemGold;
     public GameObject Player;
     public ObjecManager objecManager;
+    private playerManager playermanager;
 
     SpriteRenderer spriteRenderer;
 
@@ -25,6 +26,7 @@ public class Spider : MonoBehaviour
     public void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playermanager = GameObject.Find("Player").GetComponent<playerManager>();
     }
 
     public void Setup(SpiderSpawner spiderSpawner2,Transform[] wayPoints)
@@ -118,5 +120,22 @@ public class Spider : MonoBehaviour
             spiderSpawner.DestroySpider(this);
         }
         else { spiderSpawner.DestroySpider(this); }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            playermanager.Player_Health -= 20;
+            playermanager.Player_HealthBar.SetHealth(playermanager.Player_Health);
+            Destroy(gameObject);
+        }
+
+        if (collision.gameObject.tag == "Cannon")
+        {
+            collision.GetComponent<Cannon_Building>().get_damage();
+            Destroy(gameObject);
+        }
+
     }
 }
