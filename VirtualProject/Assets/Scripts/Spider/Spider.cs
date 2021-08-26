@@ -26,7 +26,7 @@ public class Spider : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    public void Setup(SpiderSpawner spiderSpawner, Transform[] wayPoints)
+    public void Setup(SpiderSpawner spiderSpawner,Transform[] wayPoints)
     {
         movement2D = GetComponent<Movement2D>();
         this.spiderSpawner = spiderSpawner;
@@ -37,12 +37,12 @@ public class Spider : MonoBehaviour
 
         transform.position = wayPoints[currentIndex].position;
 
-        //StartCoroutine("OnMove");
+        StartCoroutine("OnMove");
     }
 
     private void Update()
     {
-        NextMoveTo();
+        //NextMoveTo();
     }
     void Delay()
     {
@@ -75,24 +75,15 @@ public class Spider : MonoBehaviour
     }
     private IEnumerator OnMove()
     {
-         NextMoveTo();
-
         while(true)
         {
-            //transform.Rotate(Vector3.forward * 10);
-            //wayPoints[1].position = GameObject.FindGameObjectWithTag("Player").transform.position;
-            if (Vector3.Distance(transform.position, wayPoints[1].position) < 0.02f * movement2D.MoveSpeed)
-            {
-                NextMoveTo();
-            }
+            NextMoveTo();
             yield return null;
         }
         /*while (true)
         {
             NextMoveTo();
         }*/
-
-
     }
 
     private void NextMoveTo()
@@ -111,10 +102,6 @@ public class Spider : MonoBehaviour
 
             Vector3 direction = (wayPoints[1].position - transform.position).normalized;
             movement2D.MoveTo(direction);
-        }
-        else
-        {
-            Ondie();
         }
     }
 

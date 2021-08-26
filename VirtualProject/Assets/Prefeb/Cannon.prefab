@@ -198,6 +198,8 @@ MonoBehaviour:
   spawnPoint: {fileID: 4383575708249900014}
   attackRate: 3
   attackRange: 20
+  spiderSpawner: {fileID: 7164535032102353421, guid: dd382350eda6fbb4084165ab762b1a63,
+    type: 3}
 --- !u!1001 &9181362325383375389
 PrefabInstance:
   m_ObjectHideFlags: 0

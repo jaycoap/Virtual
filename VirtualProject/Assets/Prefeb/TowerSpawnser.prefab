@@ -45,3 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CannonObject: {fileID: 9181362325115290801, guid: 9e583d5002d8e634e9bce3bb5e871623,
     type: 3}
+  spiderSpawner: {fileID: 7164535032102353421, guid: dd382350eda6fbb4084165ab762b1a63,
+    type: 3}
+  pos: {x: 0, y: 0}

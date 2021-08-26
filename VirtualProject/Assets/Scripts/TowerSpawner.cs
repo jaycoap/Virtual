@@ -11,8 +11,8 @@ public class TowerSpawner : MonoBehaviour
     [SerializeField]
     private GameObject CannonObject;
     Camera Maincamera;
-    
-
+    [SerializeField]
+    private SpiderSpawner spiderSpawner; 
 
     Ray2D ray;
     RaycastHit2D rayhit;
@@ -40,7 +40,10 @@ public class TowerSpawner : MonoBehaviour
 
                 if (rayhit.transform.CompareTag("TileManager"))
                 {
-                    Instantiate(CannonObject, pos, Quaternion.identity);
+                    GameObject clone = Instantiate(CannonObject, pos, Quaternion.identity);
+                    //GameObject clone = Instantiate(CannonObject, pos, Quaternion.identity);
+                    clone.GetComponent<Cannon_Weapon>().Setup(spiderSpawner);
+                    
                 }
                 else if (rayhit.collider)
                 {

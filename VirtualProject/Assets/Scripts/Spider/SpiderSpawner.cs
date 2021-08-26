@@ -20,15 +20,16 @@ public class SpiderSpawner : MonoBehaviour
         StartCoroutine("SpawnSpider");
     }
 
-    private IEnumerator SpawnSpider()
+    public IEnumerator SpawnSpider()
     {
         while(true)
         {
             GameObject clone = Instantiate(SpiderPrefab);
             Spider spider = clone.GetComponent<Spider>();
 
-            spider.Setup(this,wayPoints);
+            spider.Setup(this, wayPoints);
             spiderList.Add(spider);
+            //Debug.Log(spiderList.Count);
             yield return new WaitForSeconds(SpawnTime);
         }
     }
