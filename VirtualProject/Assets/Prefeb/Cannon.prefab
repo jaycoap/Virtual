@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4383575708249900014}
+  - component: {fileID: 5621380266701303507}
   m_Layer: 8
   m_Name: SpawnPoint
   m_TagString: Untagged
@@ -25,11 +26,27 @@ Transform:
   m_GameObject: {fileID: 1417427494301664000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 9181362325115290803}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &5621380266701303507
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417427494301664000}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &9181362325115290801
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,6 +61,7 @@ GameObject:
   - component: {fileID: 9181362325115290764}
   - component: {fileID: -494602490551187782}
   - component: {fileID: 3339283835412079477}
+  - component: {fileID: -7086963049510768369}
   m_Layer: 8
   m_Name: Cannon
   m_TagString: Cannon
@@ -193,13 +211,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58b28f9694bfed4ea6a0f3c8193d114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 6891097366412700786, guid: 2cab2a6d8847b9a479a8eff7c1ecc08e,
+  projectilePrefab: {fileID: 8485928925306018226, guid: 37289cca1c3235440a502bf29f65540c,
     type: 3}
   spawnPoint: {fileID: 4383575708249900014}
   attackRate: 3
-  attackRange: 20
-  spiderSpawner: {fileID: 7164535032102353421, guid: dd382350eda6fbb4084165ab762b1a63,
-    type: 3}
+  attackRange: 100
+  Enemy_Dish_AttackPoint: {fileID: 4383575708249900014}
+  PlayerLayers:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!58 &-7086963049510768369
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9181362325115290801}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0096000135}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!1001 &9181362325383375389
 PrefabInstance:
   m_ObjectHideFlags: 0

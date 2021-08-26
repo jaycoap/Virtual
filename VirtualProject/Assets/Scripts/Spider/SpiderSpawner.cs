@@ -7,10 +7,11 @@ public class SpiderSpawner : MonoBehaviour
     [SerializeField]
     private GameObject SpiderPrefab;
     [SerializeField]
-    private float SpawnTime;
+    private float spawnTime;
     [SerializeField]
     private Transform[] wayPoints;
     private List<Spider> spiderList;
+
 
     public List<Spider> SpiderList => spiderList;
 
@@ -29,8 +30,8 @@ public class SpiderSpawner : MonoBehaviour
 
             spider.Setup(this, wayPoints);
             spiderList.Add(spider);
-            //Debug.Log(spiderList.Count);
-            yield return new WaitForSeconds(SpawnTime);
+            //Debug.Log(SpiderList);
+            yield return new WaitForSeconds(spawnTime);
         }
     }
 

@@ -26,14 +26,16 @@ public class Spider : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    public void Setup(SpiderSpawner spiderSpawner,Transform[] wayPoints)
+
+    public void Setup(SpiderSpawner spiderSpawner2,Transform[] wayPoints)
     {
         movement2D = GetComponent<Movement2D>();
-        this.spiderSpawner = spiderSpawner;
+        spiderSpawner = spiderSpawner2;
 
         wayPointCount = wayPoints.Length;
         this.wayPoints = new Transform[wayPointCount];
         this.wayPoints = wayPoints;
+
 
         transform.position = wayPoints[currentIndex].position;
 
