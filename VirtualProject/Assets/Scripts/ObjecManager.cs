@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjecManager : MonoBehaviour
 {
     public GameObject Enemy_Spider_Prefeb;
     public GameObject Item_Coin_Prefab;
     public GameObject Player_Bullet_Prefeb;
+    public Text Gold_Text;
 
     GameObject[] Player_Bullet;
     GameObject[] Enemy_Spider;

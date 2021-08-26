@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3846732064599773280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.7491843, y: -0.14232184, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -104,14 +104,17 @@ MonoBehaviour:
   isTouchBottom: 0
   isTouchLeft: 0
   isTouchRight: 0
+  Gold_check: 0
   Power: 1
   ShotDelay: 0
   ReloadDelay: 0.5
   Life: 0
   Player_Bullet: {fileID: 1814553459615559344, guid: f7feca2789af60249b07dd229b5074d0,
     type: 3}
-  gameManager: {fileID: 0}
-  objecManager: {fileID: 0}
+  gameManager: {fileID: 1426465307822402479, guid: 276a401212cb1ed4786cdd768933be34,
+    type: 3}
+  objecManager: {fileID: 3287220291788816531, guid: b067292f4c527cd4ba9c495902d9c9a9,
+    type: 3}
   transform: {fileID: 3846732064599773282}
 --- !u!50 &734525925452495540
 Rigidbody2D:

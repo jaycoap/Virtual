@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class playerManager : MonoBehaviour
     public bool isTouchLeft;
     public bool isTouchRight;
 
+    public int Gold_check = 0;
     public int Power;
     public float ShotDelay;
     public float ReloadDelay;
@@ -137,12 +139,15 @@ public class playerManager : MonoBehaviour
             switch (gold.type)
             {
                 case "Gold":
+                    Gold_check++;
                     break;
 
             }
             gold.Destroy();
+            
         }
     }
+    
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Border")
