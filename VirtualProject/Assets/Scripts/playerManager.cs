@@ -19,6 +19,9 @@ public class playerManager : MonoBehaviour
     public GameObject Player_Bullet;
     public gameManager gameManager;
     public ObjecManager objecManager;
+    public new Transform transform;
+    
+
 
     void Start()
     {
@@ -30,14 +33,45 @@ public class playerManager : MonoBehaviour
         if (Input.GetMouseButton(1) || Input.GetMouseButtonUp(1))
         {
             CallMoveTagetPos();
-
+            
             sprAngle = Mathf.Atan2(mousePosTrans.y - transform.position.y, mousePosTrans.x - transform.position.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(sprAngle - 90, Vector3.forward);
         }
 
+        Reload();
+        
+       
+        Fire();
+        
+
         MoveToTarget();     //마우스 클릭 위치로 이동
+        //Shot();
+        
+
     }
-    void Shot()
+    void Fire()
+    {
+        if (!Input.GetButton("Fire1"))
+        {
+            return;
+        }
+        if (ShotDelay < ReloadDelay)
+            return;
+
+        
+            GameObject bullet = Instantiate(Player_Bullet, transform.position, transform.rotation);
+            Rigidbody2D rigid = bullet.GetComponent<Rigidbody2D>();
+            rigid.AddForce(Vector3.forward * 5, ForceMode2D.Impulse);
+            ShotDelay = 0;
+        
+        
+    }
+
+    void Reload()
+    {
+        ShotDelay += Time.deltaTime;
+    }
+    /*void Shot()
     {
         if (!Input.GetButton("Fire1"))
             return;
@@ -53,17 +87,17 @@ public class playerManager : MonoBehaviour
                 break;
         }
         ReloadDelay = 0;
-    }
+    }*/
     void CallMoveTagetPos()
     {
         mousePos = Input.mousePosition;
         mousePosTrans = Camera.main.ScreenToWorldPoint(mousePos);
-        
+
         if ((isTouchTop == true) || (isTouchBottom == true))
         {
             mousePosTrans.y = 0;
         }
-        
+
         if ((isTouchLeft == true) || (isTouchRight == true))
         {
             mousePosTrans.x = 0;

@@ -198,6 +198,8 @@ MonoBehaviour:
   spawnPoint: {fileID: 4383575708249900014}
   attackRate: 3
   attackRange: 20
+  Spider: {fileID: 7192906379657339264, guid: c4002331f51f65a49a8dee4fb399c099, type: 3}
+  closetDistance: Infinity
 --- !u!1001 &9181362325383375389
 PrefabInstance:
   m_ObjectHideFlags: 0
