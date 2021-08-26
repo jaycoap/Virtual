@@ -22,12 +22,16 @@ public class playerManager : MonoBehaviour
     public gameManager gameManager;
     public ObjecManager objecManager;
     public new Transform transform;
-    
+    public int Player_maxHealth = 100;
+    public int Player_Health;
 
+    public HealthBar Player_HealthBar;
 
     void Start()
     {
-        
+        Player_Health = 100;
+        Player_HealthBar.SetMaxHealth(Player_Health);
+        Player_HealthBar.SetHealth(Player_Health);
     }
 
     void Update()

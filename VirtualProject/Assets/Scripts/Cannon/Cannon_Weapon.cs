@@ -31,9 +31,13 @@ public class Cannon_Weapon : MonoBehaviour
         this.spiderSpawner = spiderSpawner;
        
         //ChangeState(WeaponState.SearchTarget);
-        StartCoroutine("Enemy_Dish_Attack_Ani");
+        
     }
 
+    public void Start_Attack()
+    {
+        StartCoroutine("Enemy_Dish_Attack_Ani");
+    }
     private void Update()
     {
         //Enemy_Dish_Attack_Ani();

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4383575708249900014}
   - component: {fileID: 5621380266701303507}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417427494301664000}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -46,7 +46,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.01
 --- !u!1 &9181362325115290801
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: -494602490551187782}
   - component: {fileID: 3339283835412079477}
   - component: {fileID: -7086963049510768369}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Cannon
   m_TagString: Cannon
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.0096000135}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.1
 --- !u!1001 &9181362325383375389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -246,12 +246,12 @@ PrefabInstance:
     - target: {fileID: 7432078694179350106, guid: 85a8fe0e0c5fedc4c9c1762fa4135e1e,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7432078695080168038, guid: 85a8fe0e0c5fedc4c9c1762fa4135e1e,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7432078695080168056, guid: 85a8fe0e0c5fedc4c9c1762fa4135e1e,
         type: 3}
@@ -267,7 +267,7 @@ PrefabInstance:
     - target: {fileID: 7432078695429976653, guid: 85a8fe0e0c5fedc4c9c1762fa4135e1e,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7432078695916704322, guid: 85a8fe0e0c5fedc4c9c1762fa4135e1e,
         type: 3}
@@ -277,7 +277,7 @@ PrefabInstance:
     - target: {fileID: 7432078695916704322, guid: 85a8fe0e0c5fedc4c9c1762fa4135e1e,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7432078695916704325, guid: 85a8fe0e0c5fedc4c9c1762fa4135e1e,
         type: 3}
@@ -402,7 +402,7 @@ PrefabInstance:
     - target: {fileID: 7432078695941185619, guid: 85a8fe0e0c5fedc4c9c1762fa4135e1e,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7432078695941185621, guid: 85a8fe0e0c5fedc4c9c1762fa4135e1e,
         type: 3}
