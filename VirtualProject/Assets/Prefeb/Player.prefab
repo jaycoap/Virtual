@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 734525925452495540}
   - component: {fileID: 3221517612739799948}
   - component: {fileID: 2912732099292576156}
+  - component: {fileID: 3860335138769125502}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3846732064599773280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4116666, y: 0.6183333, z: 0}
+  m_LocalPosition: {x: 1.7105708, y: -1.3342775, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,18 +99,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4683c37333312994bbbacc1c0f45b6b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 0.7
   isTouchTop: 0
   isTouchBottom: 0
   isTouchLeft: 0
   isTouchRight: 0
-  Power: 0
+  Power: 1
   ShotDelay: 0
-  ReloadDelay: 0
+  ReloadDelay: 0.5
   Life: 0
-  Player_Bullet: {fileID: 0}
+  Player_Bullet: {fileID: 1814553459615559344, guid: f7feca2789af60249b07dd229b5074d0,
+    type: 3}
   gameManager: {fileID: 0}
   objecManager: {fileID: 0}
+  transform: {fileID: 3846732064599773282}
 --- !u!50 &734525925452495540
 Rigidbody2D:
   serializedVersion: 4
@@ -167,9 +170,28 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.07
+--- !u!95 &3860335138769125502
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3846732064599773280}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 90f21db0f7dc06f4eafe8a7eb649844e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

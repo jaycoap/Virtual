@@ -11,6 +11,7 @@ TagManager:
   - Border
   - BorderBullet
   - Gold
+  - Bullet
   layers:
   - Default
   - TransparentFX
