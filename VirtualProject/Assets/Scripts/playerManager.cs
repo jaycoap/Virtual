@@ -135,6 +135,19 @@ public class playerManager : MonoBehaviour
                 case "Right":
                     isTouchRight = true;
                     break;
+                case "UpperWall_Left_down":
+                    isTouchBottom = true;
+                    break;
+                case "UpperWall_Left_Up":
+                    isTouchTop = true;
+                    break;
+                case "UpperWall_Left":
+                    isTouchLeft = true;
+                    break;
+                
+                case "UpperWall_Right":
+                    isTouchRight = true;
+                    break;
             }
         }
         else if(collision.gameObject.tag == "Gold")
@@ -167,8 +180,25 @@ public class playerManager : MonoBehaviour
                 case "Left":
                     isTouchLeft = false;
                     break;
-
                 case "Right":
+                    isTouchRight = false;
+                    break;
+                case "UpperWall_Left_down":
+                    isTouchBottom = false;
+                    break;
+                case "UpperWall_Left_Up":
+                    isTouchTop = false;
+                    break;
+                case "UpperWall_Left":
+                    isTouchLeft = false;
+                    break;
+                case "UpperWall_Right_down":
+                    isTouchBottom = false;
+                    break;
+                case "UpperWall_Right_Up":
+                    isTouchTop = false;
+                    break;
+                case "UpperWall_Right":
                     isTouchRight = false;
                     break;
             }

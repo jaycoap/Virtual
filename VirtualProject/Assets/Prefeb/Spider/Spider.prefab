@@ -106,7 +106,6 @@ MonoBehaviour:
   ItemGold: {fileID: 956619086519892397, guid: 9a07832faa8de2d49b9357908d45610a, type: 3}
   Player: {fileID: 3846732064599773280, guid: 41ff6307be5af124f9178656d1889ec0, type: 3}
   objecManager: {fileID: 0}
-  player: {fileID: 3846732064599773280, guid: 41ff6307be5af124f9178656d1889ec0, type: 3}
 --- !u!114 &7192906379657339266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65f16c650e06944889ad08880947e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 0.5
   moveDirection: {x: 0, y: 0, z: 0}
 --- !u!95 &7192906379657339267
 Animator:

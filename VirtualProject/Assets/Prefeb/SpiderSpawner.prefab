@@ -47,5 +47,5 @@ MonoBehaviour:
     type: 3}
   spawnTime: 2
   wayPoints:
-  - {fileID: 7176100104853404567, guid: d25edefd4df13c24a92bfa9b7135287a, type: 3}
+  - {fileID: 1377637928157371404, guid: 9e5644410f76b9043bbc6b221f449c2a, type: 3}
   - {fileID: 3846732064599773282, guid: 41ff6307be5af124f9178656d1889ec0, type: 3}
